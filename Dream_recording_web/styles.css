@@ -193,7 +193,7 @@ margin-left: auto;
 .w1{
   left:auto;
   right: auto;
-top: 180px;
+top: 130px;
 width: 1516px;
 height: 280px;
 opacity: 1;
@@ -486,4 +486,8 @@ opacity: 1;
   position: relative;
   margin-left: auto;
     margin-right: auto;
+}
+.lianjie{
+  position: relative;
+  top:50px;
 }
