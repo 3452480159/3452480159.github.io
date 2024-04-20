@@ -490,4 +490,6 @@ opacity: 1;
 .lianjie{
   position: relative;
   top:50px;
+    left: auto;
+  right:auto;
 }
