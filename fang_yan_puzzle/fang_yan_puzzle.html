@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author"content="WuRuiZheng202218083021">
+    <title>language puzzle</title>
+    <link rel="stylesheet" href="dex.css">
+  </head>
+  <body>
+    <h1 class="biaoti">方言对对碰</h1>
+    <p class="jieshao">点击卡牌，选择方言与相应意思的普通话即可消除</p>
+    <div class="ZhuTiNeiRong">
+      <div class="ZhuTiNeiRong2">
+        时间
+        <div class="yoxizujian">
+        <span id="time"class="timeremain">60</span>
+        </div>
+
+        点击
+        <div class="yoxizujian">
+        <span id="clickc" class="clickcount">0</span>
+        </div>
+        </div>
+
+
+
+<!--方言-->
+
+        <div class="card" data-number="1" data-turn="back" onclick="handlerClick(this)">
+  <!--卡背-->
+          <div class="card_a card_f">
+             <img class="wenhao" src="img/cardback.png">
+          </div>
+  <!--正面-->
+          <div class="card_b card_f">
+            <div class="card_1"date_value="老嗯嘎">
+             <div>老嗯嘎</div>
+             </div>
+          </div>
+          </div>
+
+
+
+            <div class="card" data-number="3" data-turn="back" onclick="handlerClick(this)">
+      <!--卡背-->
+              <div class="card_a card_f">
+                 <img class="wenhao" src="img/cardback.png">
+              </div>
+      <!--正面-->
+              <div class="card_b card_f">
+                <div class="card_1"date_value="白字光">
+                 <div>白字光</div>
+                 </div>
+              </div>
+              </div>
+
+
+              <div class="card" data-number="4" data-turn="back" onclick="handlerClick(this)">
+        <!--卡背-->
+                <div class="card_a card_f">
+                   <img class="wenhao" src="img/cardback.png">
+                </div>
+        <!--正面-->
+                <div class="card_b card_f">
+                  <div class="card_1"date_value="茬胡子">
+                   <div>茬胡子</div>
+                   </div>
+                </div>
+                </div>
+
+                <div class="card" data-number="2" data-turn="back" onclick="handlerClick(this)">
+              <!--卡背-->
+                  <div class="card_a card_f">
+                     <img class="wenhao" src="img/cardback.png">
+                  </div>
+              <!--正面-->
+                  <div class="card_b card_f">
+                    <div class="card_1" date_value="细伢子">
+                     <div>细伢子</div>
+                    </div>
+                  </div>
+                  </div>
+
+                <div class="card" data-number="5" data-turn="back" onclick="handlerClick(this)">
+          <!--卡背-->
+                  <div class="card_a card_f">
+                     <img class="wenhao" src="img/cardback.png">
+                  </div>
+          <!--正面-->
+                  <div class="card_b card_f">
+                    <div class="card_1"date_value="背时鬼">
+                     <div>背时鬼</div>
+                     </div>
+                  </div>
+                  </div>
+
+                  <div class="card" data-number="6" data-turn="back" onclick="handlerClick(this)">
+            <!--卡背-->
+                    <div class="card_a card_f">
+                       <img class="wenhao" src="img/cardback.png">
+                    </div>
+            <!--正面-->
+                    <div class="card_b card_f">
+                      <div class="card_1"date_value="告花子">
+                       <div>告花子</div>
+                       </div>
+                    </div>
+                    </div>
+
+                    <div class="card" data-number="8" data-turn="back" onclick="handlerClick(this)">
+              <!--卡背-->
+                      <div class="card_a card_f">
+                         <img class="wenhao" src="img/cardback.png">
+                      </div>
+              <!--正面-->
+                      <div class="card_b card_f">
+                        <div class="card_1"date_value="满哥">
+                         <div>青年男子</div>
+                         </div>
+                      </div>
+                      </div>
+
+                    <div class="card" data-number="7" data-turn="back" onclick="handlerClick(this)">
+              <!--卡背-->
+                      <div class="card_a card_f">
+                         <img class="wenhao" src="img/cardback.png">
+                      </div>
+              <!--正面-->
+                      <div class="card_b card_f">
+                        <div class="card_1"date_value="鬼崽几">
+                         <div>鬼崽几</div>
+                         </div>
+                      </div>
+                      </div>
+
+                      <div class="card" data-number="8" data-turn="back" onclick="handlerClick(this)">
+                <!--卡背-->
+                        <div class="card_a card_f">
+                           <img class="wenhao" src="img/cardback.png">
+                        </div>
+                <!--正面-->
+                        <div class="card_b card_f">
+                          <div class="card_1"date_value="满哥">
+                           <div>满哥</div>
+                           </div>
+                        </div>
+                        </div>
+
+
+
+  <!--普通话-->
+                        <div class="card" data-number="1" data-turn="back" onclick="handlerClick(this)">
+                  <!--卡背-->
+                          <div class="card_a card_f">
+                             <img class="wenhao" src="img/cardback.png">
+                          </div>
+                  <!--正面-->
+                          <div class="card_b card_f">
+                            <div class="card_1"date_value="老嗯嘎">
+                             <div>老人</div>
+                             </div>
+                          </div>
+                          </div>
+
+                          <div class="card" data-number="2" data-turn="back" onclick="handlerClick(this)">
+                    <!--卡背-->
+                            <div class="card_a card_f">
+                               <img class="wenhao" src="img/cardback.png">
+                            </div>
+                    <!--正面-->
+                            <div class="card_b card_f">
+                              <div class="card_1" date_value="细伢子">
+                               <div>小孩</div>
+                              </div>
+                            </div>
+                            </div>
+
+
+                            <div class="card" data-number="5" data-turn="back" onclick="handlerClick(this)">
+                      <!--卡背-->
+                              <div class="card_a card_f">
+                                 <img class="wenhao" src="img/cardback.png">
+                              </div>
+                      <!--正面-->
+                              <div class="card_b card_f">
+                                <div class="card_1"date_value="背时鬼">
+                                 <div>倒霉</div>
+                                 </div>
+                              </div>
+                              </div>
+
+                            <div class="card" data-number="3" data-turn="back" onclick="handlerClick(this)">
+                      <!--卡背-->
+                              <div class="card_a card_f">
+                                 <img class="wenhao" src="img/cardback.png">
+                              </div>
+                      <!--正面-->
+                              <div class="card_b card_f">
+                                <div class="card_1"date_value="白字光">
+                                 <div>光头</div>
+                                 </div>
+                              </div>
+                              </div>
+
+
+                              <div class="card" data-number="4" data-turn="back" onclick="handlerClick(this)">
+                        <!--卡背-->
+                                <div class="card_a card_f">
+                                   <img class="wenhao" src="img/cardback.png">
+                                </div>
+                        <!--正面-->
+                                <div class="card_b card_f">
+                                  <div class="card_1"date_value="茬胡子">
+                                   <div>掉链子</div>
+                                   </div>
+                                </div>
+                                </div>
+
+
+
+
+                                  <div class="card" data-number="6" data-turn="back" onclick="handlerClick(this)">
+                            <!--卡背-->
+                                    <div class="card_a card_f">
+                                       <img class="wenhao" src="img/cardback.png">
+                                    </div>
+                            <!--正面-->
+                                    <div class="card_b card_f">
+                                      <div class="card_1"date_value="告花子">
+                                       <div>乞丐</div>
+                                       </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="card" data-number="7" data-turn="back" onclick="handlerClick(this)">
+                              <!--卡背-->
+                                      <div class="card_a card_f">
+                                         <img class="wenhao" src="img/cardback.png">
+                                      </div>
+                              <!--正面-->
+                                      <div class="card_b card_f">
+                                        <div class="card_1"date_value="鬼崽几">
+                                         <div>熊孩子</div>
+                                         </div>
+                                      </div>
+                                      </div>
+
+
+
+
+
+
+    </div>
+    <script type="text/javascript" src="./dex.js"></script>
+  </body>
+</html>
